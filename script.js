@@ -4,21 +4,21 @@ const levels = [
     creator: "Riot",
     points: 151,
     ID: 86696764,
-    image: "images/bloodbath.png"
+    image: "bloodbath.png"
   },
   {
     name: "Acheron",
     creator: "Zoink",
     points: 149,
     ID: 68940983,
-    image: "images/acheron.png"
+    image: "acheron.png"
   },
   {
     name: "Slaughterhouse",
     creator: "IcEDCave",
     points: 150,
     ID: 8975744,
-    image: "images/slaughterhouse.png"
+    image: "slaughterhouse.png"
   }
 ];
 
