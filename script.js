@@ -4,21 +4,21 @@ const levels = [
     creator: "Riot",
     points: 151,
     ID: 86696764,
-    image: "bloodbath.png"
+    image: "images/bloodbath.png"
   },
   {
     name: "Acheron",
     creator: "Zoink",
     points: 149,
     ID: 68940983,
-    image: "acheron.png"
+    image: "images/acheron.png"
   },
   {
     name: "Slaughterhouse",
     creator: "IcEDCave",
     points: 150,
     ID: 8975744,
-    image: "slaughterhouse.png"
+    image: "images/slaughterhouse.png"
   }
 ];
 
@@ -32,11 +32,13 @@ levels.forEach((lvl, index) => {
   div.className = "level";
 
   div.innerHTML = `
-    <h2>#${index + 1} ${lvl.name}</h2>
     <img src="${lvl.image}">
-    <p>By ${lvl.creator}</p>
-    <p>Points: ${lvl.points}</p>
-    <p>ID: ${lvl.ID}</p>
+    <div>
+      <h2>#${index + 1} ${lvl.name}</h2>
+      <p>By ${lvl.creator}</p>
+      <p>Points: ${lvl.points}</p>
+      <p>ID: ${lvl.ID}</p>
+    </div>
   `;
 
   list.appendChild(div);
