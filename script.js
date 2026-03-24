@@ -1,11 +1,28 @@
 const levels = [
-  {name: "Bloodbath", creator: "Riot", points: 151, ID: 86696764},
-  {name: "Acheron", creator: "Zoink", points: 149, ID: 68940983},
-  {name: "Slaughterhouse", creator: "IcEDCave", points: 150, ID: 8975744}
-
+  {
+    name: "Bloodbath",
+    creator: "Riot",
+    points: 151,
+    ID: 86696764,
+    image: "bloodbath.png"
+  },
+  {
+    name: "Acheron",
+    creator: "Zoink",
+    points: 149,
+    ID: 68940983,
+    image: "acheron.png"
+  },
+  {
+    name: "Slaughterhouse",
+    creator: "IcEDCave",
+    points: 150,
+    ID: 8975744,
+    image: "slaughterhouse.png"
+  }
 ];
 
-// seřazení podle difficulty
+// seřazení podle points
 levels.sort((a, b) => b.points - a.points);
 
 const list = document.getElementById("list");
@@ -16,8 +33,9 @@ levels.forEach((lvl, index) => {
 
   div.innerHTML = `
     <h2>#${index + 1} ${lvl.name}</h2>
+    <img src="${lvl.image}">
     <p>By ${lvl.creator}</p>
-    <p>points: ${lvl.points}</p>
+    <p>Points: ${lvl.points}</p>
     <p>ID: ${lvl.ID}</p>
   `;
 
