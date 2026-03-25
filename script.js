@@ -4,25 +4,24 @@ const levels = [
     creator: "Riot",
     points: 151,
     ID: 86696764,
-    image: "bloodbath.png"
+    image: "images/bloodbath.png"
   },
   {
     name: "Acheron",
     creator: "Zoink",
     points: 149,
     ID: 68940983,
-    image: "acheron.png"
+    image: "images/acheron.png"
   },
   {
     name: "Slaughterhouse",
     creator: "IcEDCave",
     points: 150,
     ID: 8975744,
-    image: "slaughterhouse.png"
+    image: "images/slaughterhouse.png"
   }
 ];
 
-// seřazení podle points
 levels.sort((a, b) => b.points - a.points);
 
 const list = document.getElementById("list");
