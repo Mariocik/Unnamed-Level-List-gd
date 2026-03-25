@@ -11,7 +11,6 @@
     }
 
     .level {
-  gap: 15px;
       border: 1px solid #444;
       margin: 10px auto;
       padding: 10px;
@@ -23,15 +22,35 @@
 
       background: #1a1a1a;
       border-radius: 15px;
+
+      transition: all 0.3s ease;
     }
 
     .level img {
-  width: 200px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin-right: 15px;
-}
+      width: 200px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-right: 15px;
+
+      transition: transform 0.3s ease;
+    }
+
+    /* 🔥 HOVER ANIMACE */
+    .level:hover {
+      transform: scale(1.05);
+      background: #222;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    }
+
+    .level:hover img {
+      transform: scale(1.1);
+    }
+
+    /* 🏆 TOP 1 zvýraznění */
+    .level:first-child {
+      border: 2px solid gold;
+    }
   </style>
 </head>
 
